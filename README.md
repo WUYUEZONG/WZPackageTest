@@ -1,0 +1,2 @@
+# WZPackageTest
+ wzpackagetests

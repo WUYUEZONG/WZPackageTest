@@ -13,9 +13,9 @@ class TestLayoutController: WZUICollectionController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let l = WZPageEnableLayout()
-        l.itemSize = CGSize(width: .wzScreenWidth * 0.8, height: 150)
+        l.itemSize = CGSize(width: .wzScreenWidth * 0.8, height: .wzScreenHeight * 0.8)
         l.scrollDirection = .horizontal
-        l.pageEnabe = true
+        l.decelerationRate = .normal
         collection.setCollectionViewLayout(l, animated: false)
         collection.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "UICollectionViewCell")
     }

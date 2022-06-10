@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		613F681C27F5EE6700BD0932 /* NavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613F681B27F5EE6700BD0932 /* NavgationController.swift */; };
 		973573242826C358003B2052 /* PickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973573232826C358003B2052 /* PickerController.swift */; };
+		CC1CDF802852F08600918B0B /* TestLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CDF7F2852F08600918B0B /* TestLayoutController.swift */; };
 		CC5F506B2757020900EEB980 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5F506A2757020900EEB980 /* PageController.swift */; };
 		CC6682312716BA8400E40F6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6682302716BA8400E40F6F /* AppDelegate.swift */; };
 		CC6682332716BA8400E40F6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6682322716BA8400E40F6F /* SceneDelegate.swift */; };
@@ -26,6 +27,7 @@
 		97AAE69A2830C7BA002A8786 /* ExampleConfig.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ExampleConfig.release.xcconfig; sourceTree = "<group>"; };
 		CC1CDF7D2852EB7200918B0B /* WZUIKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = WZUIKit; path = ../WZUIKit; sourceTree = "<group>"; };
 		CC1CDF7E2852EC6500918B0B /* WZBaseComponents */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = WZBaseComponents; path = ../WZBaseComponents; sourceTree = "<group>"; };
+		CC1CDF7F2852F08600918B0B /* TestLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLayoutController.swift; sourceTree = "<group>"; };
 		CC5F506A2757020900EEB980 /* PageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
 		CC66822D2716BA8400E40F6F /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6682302716BA8400E40F6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				CC6682302716BA8400E40F6F /* AppDelegate.swift */,
 				CC6682322716BA8400E40F6F /* SceneDelegate.swift */,
 				CC6682342716BA8400E40F6F /* ViewController.swift */,
+				CC1CDF7F2852F08600918B0B /* TestLayoutController.swift */,
 				CC5F506A2757020900EEB980 /* PageController.swift */,
 				613F681B27F5EE6700BD0932 /* NavgationController.swift */,
 				973573232826C358003B2052 /* PickerController.swift */,
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				613F681C27F5EE6700BD0932 /* NavgationController.swift in Sources */,
+				CC1CDF802852F08600918B0B /* TestLayoutController.swift in Sources */,
 				CC5F506B2757020900EEB980 /* PageController.swift in Sources */,
 				CC6682352716BA8400E40F6F /* ViewController.swift in Sources */,
 				973573242826C358003B2052 /* PickerController.swift in Sources */,
@@ -343,6 +347,7 @@
 				DEVELOPMENT_TEAM = 2CR46MA89R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Example/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Debug;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -352,7 +357,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "";
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyz.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -373,6 +378,7 @@
 				DEVELOPMENT_TEAM = 2CR46MA89R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Example/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Debug;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -382,7 +388,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "";
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyz.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

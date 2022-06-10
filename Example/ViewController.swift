@@ -25,7 +25,7 @@ class ViewController: WZUIViewController {
         }
     }
     
-    var datas: [String] = ["WZUIHUD", "TableGameVC", "DatePicker"]
+    var datas: [String] = ["WZUIHUD", "TableGameVC", "DatePicker", "CollectionLayout"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,6 +81,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.show(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PickerController"), sender: nil)
             break
             
+        case 3:
+            self.navigationController?.show(TestLayoutController(), sender: nil)
+            break
         default:
             break
         }

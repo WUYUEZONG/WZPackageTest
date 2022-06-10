@@ -82,6 +82,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             break
             
         case 3:
+//            let l = WZPageEnableLayout()
+//            l.itemSize = CGSize(width: .wzScreenWidth * 0.8, height: .wzScreenHeight * 0.8)
+//            l.targetAlign = .center//.leading(spacing: 16)
+//            l.scrollDirection = .horizontal
+//            l.decelerationRate = .normal
             self.navigationController?.show(TestLayoutController(), sender: nil)
             break
         default:

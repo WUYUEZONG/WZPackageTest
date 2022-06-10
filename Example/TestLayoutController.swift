@@ -7,16 +7,31 @@
 
 import UIKit
 import WZUIKit
+import WZBaseComponents
 
 class TestLayoutController: WZUICollectionController {
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if #available(iOS 13.0, *) {
+
+            collection.contentInsetAdjustmentBehavior = .never
+            wzNavgationView.wzBackItem.setImage(UIImage(systemName: "chevron.backward"), for: .normal)
+        } else {
+            // Fallback on earlier versions
+        }
+        
+        
         let l = WZPageEnableLayout()
-        l.itemSize = CGSize(width: .wzScreenWidth * 0.8, height: .wzScreenHeight * 0.8)
-        l.targetAlign = .leading(spacing: 16)
+        l.itemSize = CGSize(width: .wzScreenWidth * 0.8, height: .wzScreenHeight * 0.7)
+        l.targetAlign = .center//.leading(spacing: 16)
         l.scrollDirection = .horizontal
         l.decelerationRate = .normal
+        
+//        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: l)
+//        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collection.setCollectionViewLayout(l, animated: false)
         collection.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "UICollectionViewCell")
     }

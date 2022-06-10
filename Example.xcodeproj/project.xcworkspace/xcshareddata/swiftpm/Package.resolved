@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "WZBaseComponents",
+        "repositoryURL": "https://github.com/WUYUEZONG/WZBaseComponents.git",
+        "state": {
+          "branch": "main",
+          "revision": "097a656281658aef764e546310075dbfb637c734",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

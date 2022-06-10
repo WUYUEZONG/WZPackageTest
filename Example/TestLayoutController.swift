@@ -14,6 +14,7 @@ class TestLayoutController: WZUICollectionController {
         super.viewDidLoad()
         let l = WZPageEnableLayout()
         l.itemSize = CGSize(width: .wzScreenWidth * 0.8, height: .wzScreenHeight * 0.8)
+        l.targetAlign = .leading(spacing: 16)
         l.scrollDirection = .horizontal
         l.decelerationRate = .normal
         collection.setCollectionViewLayout(l, animated: false)

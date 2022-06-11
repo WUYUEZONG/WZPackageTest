@@ -24,11 +24,13 @@ class TestLayoutController: WZUICollectionController {
         }
         
         
-        let l = WZPageEnableLayout()
-        l.itemSize = CGSize(width: .wzScreenWidth * 0.8, height: .wzScreenHeight * 0.7)
-        l.targetAlign = .center//.leading(spacing: 16)
-        l.scrollDirection = .horizontal
-        l.decelerationRate = .normal
+//        let l = WZPageEnableLayout()
+        let l = WZWaterFlowLayout()
+        l.delegate = self
+//        l.itemSize = CGSize(width: .wzScreenWidth * 0.8, height: .wzScreenHeight * 0.7)
+//        l.targetAlign = .center//.leading(spacing: 16)
+//        l.scrollDirection = .vertical
+//        l.decelerationRate = .normal
         
 //        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: l)
 //        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -45,6 +47,16 @@ class TestLayoutController: WZUICollectionController {
         cell.contentView.backgroundColor = .randomColor(60)
         cell.contentView.layer.cornerRadius = 12
         return cell
+    }
+    
+    
+}
+
+extension TestLayoutController: WZWaterFlowLayoutDelegate {
+    
+    func layoutItemHeight(at indexPath: IndexPath) -> CGFloat {
+        let h = CGFloat(arc4random_uniform(200) + 100)
+        return h
     }
     
 }

@@ -27,19 +27,15 @@ class TestLayoutController: WZUICollectionController {
 //        let l = WZPageEnableLayout()
         let l = WZWaterFlowLayout()
         l.delegate = self
-//        l.itemSize = CGSize(width: .wzScreenWidth * 0.8, height: .wzScreenHeight * 0.7)
-//        l.targetAlign = .center//.leading(spacing: 16)
-//        l.scrollDirection = .vertical
-//        l.decelerationRate = .normal
-        
-//        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: l)
-//        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        l.rowSpacing = 10
+
+        collection.contentInset.top = .wzStatusWithNavgationBarHeight
         collection.setCollectionViewLayout(l, animated: false)
         collection.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "UICollectionViewCell")
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 99
+        return 9
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

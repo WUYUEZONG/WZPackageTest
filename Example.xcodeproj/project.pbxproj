@@ -26,7 +26,6 @@
 		97AAE6992830C79A002A8786 /* ExampleConfig.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ExampleConfig.debug.xcconfig; sourceTree = "<group>"; };
 		97AAE69A2830C7BA002A8786 /* ExampleConfig.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ExampleConfig.release.xcconfig; sourceTree = "<group>"; };
 		CC1CDF7D2852EB7200918B0B /* WZUIKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = WZUIKit; path = ../WZUIKit; sourceTree = "<group>"; };
-		CC1CDF7E2852EC6500918B0B /* WZBaseComponents */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = WZBaseComponents; path = ../WZBaseComponents; sourceTree = "<group>"; };
 		CC1CDF7F2852F08600918B0B /* TestLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLayoutController.swift; sourceTree = "<group>"; };
 		CC5F506A2757020900EEB980 /* PageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
 		CC66822D2716BA8400E40F6F /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +36,7 @@
 		CC6682392716BA8500E40F6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC66823C2716BA8500E40F6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC66823E2716BA8500E40F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCB27F8D285AF14A00B8361A /* WZCoreData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = WZCoreData; path = ../WZCoreData; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				CC1CDF7D2852EB7200918B0B /* WZUIKit */,
-				CC1CDF7E2852EC6500918B0B /* WZBaseComponents */,
+				CCB27F8D285AF14A00B8361A /* WZCoreData */,
 			);
 			name = Packages;
 			sourceTree = "<group>";

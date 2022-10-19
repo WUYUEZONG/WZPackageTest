@@ -18,6 +18,9 @@
 		CC66823A2716BA8500E40F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6682392716BA8500E40F6F /* Assets.xcassets */; };
 		CC66823D2716BA8500E40F6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC66823B2716BA8500E40F6F /* LaunchScreen.storyboard */; };
 		CC66824B2716BE9D00E40F6F /* WZUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = CC66824A2716BE9D00E40F6F /* WZUIKit */; };
+		CC9CB75828FFA26B00A2058E /* WZSHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9CB75728FFA26B00A2058E /* WZSHUD.swift */; };
+		CC9CB75E28FFA3BF00A2058E /* WZSHUDTOP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9CB75D28FFA3BF00A2058E /* WZSHUDTOP.swift */; };
+		CC9CB76028FFD5AD00A2058E /* HUD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9CB75F28FFD5AD00A2058E /* HUD.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		CC6682392716BA8500E40F6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC66823C2716BA8500E40F6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC66823E2716BA8500E40F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC9CB75728FFA26B00A2058E /* WZSHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WZSHUD.swift; sourceTree = "<group>"; };
+		CC9CB75D28FFA3BF00A2058E /* WZSHUDTOP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WZSHUDTOP.swift; sourceTree = "<group>"; };
+		CC9CB75F28FFD5AD00A2058E /* HUD.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HUD.storyboard; sourceTree = "<group>"; };
 		CCB27F8D285AF14A00B8361A /* WZCoreData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = WZCoreData; path = ../WZCoreData; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +108,9 @@
 				CC6682392716BA8500E40F6F /* Assets.xcassets */,
 				CC66823B2716BA8500E40F6F /* LaunchScreen.storyboard */,
 				CC66823E2716BA8500E40F6F /* Info.plist */,
+				CC9CB75728FFA26B00A2058E /* WZSHUD.swift */,
+				CC9CB75D28FFA3BF00A2058E /* WZSHUDTOP.swift */,
+				CC9CB75F28FFD5AD00A2058E /* HUD.storyboard */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -174,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9CB76028FFD5AD00A2058E /* HUD.storyboard in Resources */,
 				CC66823D2716BA8500E40F6F /* LaunchScreen.storyboard in Resources */,
 				CC66823A2716BA8500E40F6F /* Assets.xcassets in Resources */,
 				CC6682382716BA8400E40F6F /* Main.storyboard in Resources */,
@@ -190,7 +200,9 @@
 				613F681C27F5EE6700BD0932 /* NavgationController.swift in Sources */,
 				CC1CDF802852F08600918B0B /* TestLayoutController.swift in Sources */,
 				CC5F506B2757020900EEB980 /* PageController.swift in Sources */,
+				CC9CB75E28FFA3BF00A2058E /* WZSHUDTOP.swift in Sources */,
 				CC6682352716BA8400E40F6F /* ViewController.swift in Sources */,
+				CC9CB75828FFA26B00A2058E /* WZSHUD.swift in Sources */,
 				973573242826C358003B2052 /* PickerController.swift in Sources */,
 				CC6682312716BA8400E40F6F /* AppDelegate.swift in Sources */,
 				CC6682332716BA8400E40F6F /* SceneDelegate.swift in Sources */,

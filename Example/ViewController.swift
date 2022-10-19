@@ -25,7 +25,7 @@ class ViewController: WZUIViewController {
         }
     }
     
-    var datas: [String] = ["WZUIHUD", "TableGameVC", "DatePicker", "CollectionLayout"]
+    var datas: [String] = ["WZUIHUD", "TableGameVC", "DatePicker", "CollectionLayout", "PageController", "SHUDCenter", "SHUDTop"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,12 +35,17 @@ class ViewController: WZUIViewController {
         wzNavgationView.isShowEffect = false
         
         WZUIHUD.shared.configWZUIHUD(isUserInteractionEnabled: true, position: .bottom)
+        
+        
     }
     
 //    override var prefersStatusBarHidden: Bool {
 //        return true
 //    }
 
+//    override func wzNavNoNeedFitOnHeight() -> CGFloat? {
+//        return nil
+//    }
 
 }
 
@@ -69,7 +74,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         switch indexPath.row {
         case 0:
-            WZUIHUD.shared.showMessage("WZHUD消息提示", delay: 5)
+//            WZUIHUD.shared.showMessage("WZHUD消息提示", delay: 5)
+            
+            WZSHUD.shared.hud()
             
             break
         case 1:
@@ -88,6 +95,17 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 //            l.scrollDirection = .horizontal
 //            l.decelerationRate = .normal
             self.navigationController?.show(TestLayoutController(), sender: nil)
+            
+        case 4:
+            self.navigationController?.show(PageController(), sender: nil)
+            break
+            
+        case 5:
+            WZSHUD.shared.huding(msg: "WZSHUD CENTER LOADING")
+            break
+            
+        case 6:
+            WZSHUD.shared.hud(msg: "WZSHUD TOP LOADING")
             break
         default:
             break

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WZSHUD-->
+        <scene sceneID="ZRX-bj-3By">
+            <objects>
+                <viewController storyboardIdentifier="WZSHUD" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xUG-wP-PHw" customClass="WZSHUD" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tpF-cO-Eev">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="M6a-69-E8l">
+                                <rect key="frame" x="118.00000000000001" y="402.33333333333331" width="154.33333333333337" height="39.666666666666686"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="dPp-qa-8vx">
+                                        <rect key="frame" x="67" y="0.0" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medium Activity Indicator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSj-7U-oU2">
+                                        <rect key="frame" x="0.0" y="24" width="154.33333333333334" height="15.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <containerView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Qk1-zs-d2d">
+                                <rect key="frame" x="20" y="20" width="350" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="BLN-DQ-9uh"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="YME-P8-Jkc" kind="embed" identifier="WZSHUDTOPVC" id="rMP-bR-A7V"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qk1-zs-d2d" firstAttribute="leading" secondItem="tpF-cO-Eev" secondAttribute="leading" constant="20" id="6nB-GA-1vc"/>
+                            <constraint firstItem="M6a-69-E8l" firstAttribute="centerY" secondItem="tpF-cO-Eev" secondAttribute="centerY" id="ENH-5T-alQ"/>
+                            <constraint firstItem="M6a-69-E8l" firstAttribute="centerX" secondItem="tpF-cO-Eev" secondAttribute="centerX" id="Mgd-Dp-hy9"/>
+                            <constraint firstItem="M6a-69-E8l" firstAttribute="width" relation="lessThanOrEqual" secondItem="tpF-cO-Eev" secondAttribute="width" multiplier="0.62" id="ceI-wW-KwG"/>
+                            <constraint firstItem="Qk1-zs-d2d" firstAttribute="top" secondItem="tpF-cO-Eev" secondAttribute="top" constant="20" id="rV3-Dz-Az4"/>
+                            <constraint firstAttribute="trailing" secondItem="Qk1-zs-d2d" secondAttribute="trailing" constant="20" id="vs0-Kr-xjB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="dPp-qa-8vx" id="8F1-VV-OyN"/>
+                        <outlet property="centerStack" destination="M6a-69-E8l" id="J7u-6V-bTE"/>
+                        <outlet property="indicatorDetailLabel" destination="aSj-7U-oU2" id="h6R-Ay-97s"/>
+                        <outlet property="topConstaint" destination="rV3-Dz-Az4" id="ArD-zj-p5b"/>
+                        <outlet property="topHeightConstaint" destination="BLN-DQ-9uh" id="vVR-nA-OEJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m2C-lA-L3k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-333.84615384615381" y="-153.55450236966823"/>
+        </scene>
+        <!--WZSHUDTOP-->
+        <scene sceneID="Qj0-xj-rQK">
+            <objects>
+                <viewController storyboardIdentifier="WZSHUDTOP" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YME-P8-Jkc" customClass="WZSHUDTOP" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" verticalHuggingPriority="200" verticalCompressionResistancePriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="K7M-3U-Gtk">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="44"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SIe-X3-RwV">
+                                <rect key="frame" x="35" y="11.999999999999998" width="280" height="20.333333333333329"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="257" text="Example was compiled with optimization - stepping may behave oddly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9s-ji-ti9">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksL-3s-HC6">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SIe-X3-RwV" firstAttribute="width" secondItem="K7M-3U-Gtk" secondAttribute="width" multiplier="0.8" id="0mn-wm-TlA"/>
+                            <constraint firstItem="SIe-X3-RwV" firstAttribute="centerY" secondItem="K7M-3U-Gtk" secondAttribute="centerY" id="PvU-MZ-cpt"/>
+                            <constraint firstItem="SIe-X3-RwV" firstAttribute="centerX" secondItem="K7M-3U-Gtk" secondAttribute="centerX" id="Xw7-CI-S5h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentStack" destination="SIe-X3-RwV" id="7Lu-OB-CWX"/>
+                        <outlet property="detailContent" destination="ksL-3s-HC6" id="QDA-nu-gUr"/>
+                        <outlet property="titleContent" destination="Y9s-ji-ti9" id="AZv-IZ-Ahc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOh-F0-A31" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="431" y="-439"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
